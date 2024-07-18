@@ -18,9 +18,11 @@ function Pokemones() {
 
 
   return (
-    <>
+    <div className="d-flex justify-content-center vh-100 mt-5">
+    
+        
         <Dropdown>
-            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+            <Dropdown.Toggle className="btn-lg" variant="warning" id="dropdown-basic">
                 Choose your Pokemon
             </Dropdown.Toggle>
                 
@@ -35,7 +37,7 @@ function Pokemones() {
                 </Dropdown.Menu>
                 
         </Dropdown>
-    </>
+    </div>
   )
 }
 

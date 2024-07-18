@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams, useNavigate } from 'react-router-dom';
 import {useState, useEffect} from 'react';
-import { ListGroup, Card, Spinner, Button} from 'react-bootstrap';
+import { ListGroup, Card, Spinner, Button, Container} from 'react-bootstrap';
 
 function InfoPokemon() {
 
@@ -35,21 +35,21 @@ function InfoPokemon() {
     }
 
   return (
-    <>
-        <Card style={{ width: '18rem' }}>
+    <Container className='mt-5 d-flex flex-column align-items-center'>
+        <Card style={{ width: '18rem'}} className="justify-content-md-center">
             <Card.Img variant="top" src={pokemon.sprites.front_default} />
             <Card.Body>
-                <Card.Title># {pokemon.id} - {pokemon.name}</Card.Title>
+                <Card.Title className="text-center font-weight-bold"># {pokemon.id} - {pokemon.name}</Card.Title>
                 <ListGroup> {pokemon.stats.map((stat, i) => (
                     <ListGroup.Item key={i}>
                         {stat.stat.name}: {stat.base_stat}
                     </ListGroup.Item>
                  ))}
                 </ListGroup>
-                <Button onClick={back} className="btn btn-secondary mt-4">Back</Button>
+                <Button onClick={back} className="btn btn-warning mt-4 d-block mx-auto">Back</Button>
             </Card.Body>
         </Card>
-    </>
+    </Container>
   )
 }
 
