@@ -1,8 +1,25 @@
-# React + Vite
+# Desafio Router II 
+## Pokemon App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Habilidades a evaluar
+● Obtener los parámetros de una ruta con useParams()
+● Redireccionar programáticamente usando useNavigate()
+● Usar NavLink para definir una clase activa a la ruta que se esté visitando.
 
-Currently, two official plugins are available:
+#### Descripción
+En este desafío pondremos a prueba tus nuevas habilidades con React Router para
+consolidar el redireccionamiento de rutas, la obtención de parámetros en una ruta y la
+asignación de una clase activa a la ruta que se esté visitando en una SPA.
+Deberás utilizar la Poke API para obtener los datos de los pokemones y cargarlos en las
+vistas que correspondan.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Requerimientos
+1. Asignar una clase active a la ruta que el usuario consulte usando NavLink.
+
+2. Redireccionar programáticamente al usuario usando el hook useNavigate.
+
+3. Obtener parámetros de la URL usando el hook useParams.
+
+_
+
+Escrito por [Diego Castillo](https://github.com/DICAVI86)
